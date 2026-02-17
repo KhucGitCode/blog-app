@@ -1,0 +1,124 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.app-container {
+  max-width: 720px;
+  margin: auto;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Title */
+.app-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+/* Form */
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* Buttons base */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Create */
+.create-btn {
+  background: #2563eb;
+  color: white;
+  width: 100%;
+}
+
+.create-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Post cards */
+.post-card {
+  background: #fafafa;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.post-card h3 {
+  margin: 0 0 6px 0;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+/* Edit */
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+/* Delete */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Empty text */
+.empty-text {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px 0;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 22px;
+  }
+}
